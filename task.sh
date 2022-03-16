@@ -6,7 +6,7 @@ arr[2]="bot: 🥱 Gn.. "
 arr[3]="bot: 🤡 Lakaka"
 arr[4]="bot: 😪 Hufft..."
 arr[5]="bot: 💀 Roberto Levandoksa"
-arr[6]="bot: 🙄 Running task, again."
+arr[6]="bot: ඞ Amogus"
 arr[7]="bot: 🤌 Pizza"
 
 rand=$[$RANDOM % ${#arr[@]}]
