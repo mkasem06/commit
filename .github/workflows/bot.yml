@@ -20,6 +20,7 @@ jobs:
       - name: Run Bot Task
         run: |
           chmod +x ./task.sh
+          git config --global --add safe.directory /github/workspace
           ./task.sh
           
       - name: GitHub Push
