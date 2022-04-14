@@ -12,6 +12,10 @@ jobs:
   auto-commit:
     runs-on: ubuntu-latest
     steps:
+      - name: Configure safe.directory  # Workaround for actions/checkout#760
+        run: git config --global --add safe.directory /home/runner/work/commit/commit
+        timeout-minutes: 1
+      
       - uses: actions/checkout@v2      
         with:
           persist-credentials: false
