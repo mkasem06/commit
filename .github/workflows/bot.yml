@@ -16,6 +16,9 @@ jobs:
         run: git config --global --add safe.directory /home/runner/work/commit/commit
         timeout-minutes: 1
 
+      - name: Safe dir
+        run: git config --global --add safe.directory /github/workspace
+
       - name: work around permission issue
         run: git config --global --add safe.directory /__w/commit/commit
 
