@@ -26,7 +26,11 @@ jobs:
         run: git config --global --add safe.directory /__w/commit/commit
 
       - name: Trust My Directory
-        run: export GIT_CEILING_DIRECTORIES=/__w     
+        run: export GIT_CEILING_DIRECTORIES=/__w
+
+      - name: Configure safe.directory  # Workaround for actions/checkout#760
+        run: git config --global --add safe.directory /home/runner/work/commit/commit
+        timeout-minutes: 1     
           
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
