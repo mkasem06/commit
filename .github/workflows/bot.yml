@@ -16,8 +16,8 @@ jobs:
         run: git config --global --add safe.directory /home/runner/work/commit/commit
         timeout-minutes: 1
 
-    - name: git-workaround
-      run: |
+      - name: git-workaround
+        run: |
         export REPOSITORY_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')
         git config --global --add safe.directory /__w/${REPOSITORY_NAME}/${REPOSITORY_NAME}
 
