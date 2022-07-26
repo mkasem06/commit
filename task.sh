@@ -1,13 +1,13 @@
 #!/bin/bash
 
-arr[0]="bot: 💅 I'm a barbie girl.."
-arr[1]="bot: 👀 Watch out! Watch out! ta tara ta"
-arr[2]="bot: 🥱 Gn.. "
-arr[3]="bot: 🤡 Lakaka"
-arr[4]="bot: 😩 Siuuu"
-arr[5]="bot: 💀 Roberto Levandoksa"
-arr[6]="bot: ඞ Amogus"
-arr[7]="bot: 🤌 Pizza"
+arr[0]="bot: ❤️ يعقوب قمر الدين دبيازة"
+arr[1]="bot: 🥰 خالد كشميري"
+arr[2]="bot: 😍 خضر كراويته"
+arr[3]="bot: 🔥 عثمان عبدالجيل ششه"
+arr[4]="bot: 😘 محمد سنبل"
+arr[5]="bot: 😮‍💨 اسماعيل احمد كنباوي"
+arr[6]="bot: 💕 بهجت صابر"
+arr[7]="bot: 🫠 عادل شكل"
 
 rand=$[$RANDOM % ${#arr[@]}]
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
